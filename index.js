@@ -11,4 +11,5 @@ const app = express();
 app.use(cors());
 app.use(handler);
 
-app.listen(3000, () => console.log("Listening to :3000"));
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log("Listening to :3000"));
